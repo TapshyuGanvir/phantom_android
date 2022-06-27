@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:weightSum="1"
+    android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.95"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="#f0f0f0">
+
+            <Spinner
+                android:id="@+id/productItemsSpinner"
+                android:layout_width="match_parent"
+                android:overlapAnchor="false"
+                android:background="@drawable/item_spinner_bg"
+                android:layout_height="@dimen/_30sdp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/minusBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:textColor="@color/phantom_black"
+                android:gravity="center"
+                android:textSize="@dimen/_22sdp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="-"/>
+
+            <EditText
+                android:id="@+id/product_count_et"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:layout_weight="0.4"
+                android:background="#f0f0f0"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:hint="00"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#5C5C5C"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/plusBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:textColor="@color/phantom_black"
+                android:gravity="center"
+                android:textSize="@dimen/_22sdp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="+"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <ImageView
+        android:layout_weight="0.05"
+        android:id="@+id/remove_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_baseline_close_24"
+        android:tint="@color/colorBlack"
+        tools:ignore="UseAppTint" />
+
+
+</LinearLayout>

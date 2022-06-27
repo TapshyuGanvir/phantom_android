@@ -1,0 +1,7 @@
+.gradle/
+.idea/
+app/build/
+java_pid8976.hprof
+java_pid8508.hprof
+java_pid252.hprof
+*.hprof
