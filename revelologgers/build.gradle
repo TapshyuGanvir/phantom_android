@@ -36,3 +36,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     api files('libs/commons-io-2.4.jar')
 }
+android {
+    //...
+    lintOptions {
+        abortOnError false
+    }
+}
